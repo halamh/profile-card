@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position-x: 110vh;
+    background-position-y: 40vh;
+    background-size: 60%;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: -20vh;
+    background-position-y: -45vh;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 50vh;
+   max-height: 100%;
+   overflow: hidden;
+   border-radius: 10px;
+   background-color: white;
+}
+
+.metrics {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    top: 43px;
+    border-top: 1px solid hsl(0, 0%, 59%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 2vh;
+}
+
+.background {
+    width: 100%;
+    overflow: hidden;
+}
+
+.caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4vh;
+    gap: 30px;
+}
+
+.info {
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+
+.new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+h1 {
+    font-family: "Kumbh Sans";
+    font-weight: 700;
+}
+
+p {
+    font-family: "Kumbh Sans";
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+@media only screen and (max-width: 475px) {
+    main {
+        background-size: 80%;
+        background-position-x: -30vh;
+        background-position-y: -30vh;
+    }
+    body {
+        background-position-x: 50vh;
+        background-position-y: 60vh;
+        background-size: 80%;
+    }
+}
